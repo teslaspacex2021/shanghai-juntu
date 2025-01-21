@@ -11,6 +11,34 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <style>
+      .service-box {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 25px;
+      }
+      .service-box__icon {
+        flex: 0 0 auto;
+        margin-bottom: 15px;
+      }
+      .service-box h4 {
+        flex: 0 0 auto;
+        margin-bottom: 15px;
+      }
+      .service-box p {
+        flex: 1 1 auto;
+        margin-bottom: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .row-30 > [class*="col"] {
+        margin-bottom: 30px;
+      }
+    </style>
   </head>
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -28,13 +56,13 @@
           <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
             <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
             <div class="rd-navbar-aside-outer rd-navbar-collapse">
-              <!-- <div class="rd-navbar-aside">
+              <div class="rd-navbar-aside">
                 <ul class="list-inline list-address">
-                  <li><a href="#">732/21 Second Street, Manchester</a></li>
-                  <li>Mon-Fri 8:00 am - 20:00 pm</li>
+                  <li><a href="#">上海市嘉定区蓝天经济城</a></li>
+                  <li>周一至周五 9:00 - 18:00</li>
                 </ul>
-                <div class="rd-navbar-call">Call us:&nbsp;<a href="tel:#">+ 800 4759 1232</a></div>
-              </div> -->
+                <div class="rd-navbar-call">博采众长，开拓创新</div>
+              </div>
             </div>
             <div class="rd-navbar-main-outer">
               <div class="rd-navbar-main">
@@ -98,7 +126,7 @@
                     </li> -->
                     <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">联系我们</a>
                     </li>
-                  </ul><a class="button button-primary-gradient" href="#"><span>Subscribe</span></a>
+                  <!-- </ul><a class="button button-primary-gradient" href="#"><span>Subscribe</span></a> -->
                 </div>
               </div>
             </div>
@@ -340,7 +368,7 @@
         <div class="container">
           <div class="row row-30 justify-content-center justify-content-sm-start text-center text-sm-left">
             <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
-              <div class="accent-number"><span>联系电话</span><a href="tel:#">021-59581358</a></div>
+              <div class="accent-number"><span>营业时间</span></div>
               <ul class="detail-info">
                 <li><span class="d-block">周一至周五: 上午9:00至下午6:00</span><span class="d-block">周六至周日: 上午10:00至下午4:00</span></li>
                 <li><span class="d-block">上海市嘉定区</span><span class="d-block">蓝天经济城</span></li>
@@ -366,16 +394,13 @@
               </ul>
             </div>
             <div class="col-lg-5 col-xl-4 col-md-7 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
-              <h5>订阅我们的通讯</h5>
-              <form class="rd-form rd-mailform form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
-                <div class="form-wrap">
-                  <input class="form-input" id="subscribe-form-4-email" type="email" name="email" data-constraints="@Required @Email">
-                  <label class="form-label" for="subscribe-form-4-email">输入您的邮箱...</label>
-                </div>
-                <div class="form-button">
-                  <button class="button button-primary-gradient" type="submit"><span>订阅</span></button>
-                </div>
-              </form>
+              <h5>关于我们</h5>
+              <p class="footer-text">上海君途企业发展有限公司于2005年成立，主要是为中小企业商务咨询服务和商业活动策划，其中包括房地产，生产企业，酒店餐饮行业以及各类商会团体。</p>
+              <ul class="social-list">
+                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-weixin" href="#"></a></li>
+                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-weibo" href="#"></a></li>
+                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-qq" href="#"></a></li>
+              </ul>
             </div>
           </div>
         </div>
